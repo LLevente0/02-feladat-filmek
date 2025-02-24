@@ -7,3 +7,5 @@ with open("filmek.txt", "r", encoding="utf-8") as forrasfajl:
         kockak_szama = int(adatok[2])
         szines = adatok[3]
         filmek.append([cim, ev, kockak_szama, szines])
+
+print(f"{filmek=}")
