@@ -11,5 +11,3 @@ with open("filmek.txt", "r", encoding="utf-8") as forrasfajl:
 print(f"{filmek=}")
 
 print(f"\n3.2. feladat: Az állományban {len(filmek)} db diafilm adatai szerepelnek.")
-
-prin
