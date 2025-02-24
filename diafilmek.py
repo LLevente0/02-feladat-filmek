@@ -9,3 +9,7 @@ with open("filmek.txt", "r", encoding="utf-8") as forrasfajl:
         filmek.append([cim, ev, kockak_szama, szines])
 
 print(f"{filmek=}")
+
+print(f"\n3.2. feladat: Az állományban {len(filmek)} db diafilm adatai szerepelnek.")
+
+prin
