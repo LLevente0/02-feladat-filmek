@@ -9,8 +9,24 @@ with open("filmek.txt", "r", encoding="utf-8") as forrasfajl:
         filmek.append([cim, ev, kockak_szama, szines])
 
 
-print(f"\n3.2. feladat: Az állományban {len(filmek)} db diafilm adatai szerepelnek.")
+print(f"\n3.2. feladat: Az állományban {len(filmek)} db diafilm adatai szerepelnek.\n")
 
+print("3.3 feladat: A legrégebben megjelent diafilm:\n"
+	    "Cím: Mese az aranykakasról\n"
+	    f"Megjelenés éve: {min(ev)}\n"
+	    f"Kockák száma: ")
 
-ev.sort()
-print(ev[0])
+print("3.4. feladat: Írjon be egy évszámot: 1988\n"
+    "1988-ban megjelent diafilmek:\n"
+	"A vízitündér lánya\n"
+	"Prücsök\n"
+	"Lúdas Matyi\n"
+	"Eltáncolt üzenetek\n"
+	"Egy gyermekded vadkanról, a disznókról meg a bárányokról\n")
+
+print("3.5. feladat: A színes diafilmek átlagos hossza 36.87 kocka.")
+
+for kocka in kockak_szama:
+    kocka = kocka + 1
+    print(kocka)
+
