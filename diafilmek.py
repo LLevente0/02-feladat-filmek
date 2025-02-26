@@ -14,10 +14,12 @@ print(f"\n3.2. feladat: Az állományban {len(filmek)} db diafilm adatai szerepe
 print("3.3 feladat: A legrégebben megjelent diafilm:\n"
 	    "Cím: Mese az aranykakasról\n"
 	    f"Megjelenés éve: {min(ev)}\n"
-	    f"Kockák száma: ")
+	    f"Kockák száma: \n")
 
-print("3.4. feladat: Írjon be egy évszámot: 1988\n"
-    "1988-ban megjelent diafilmek:\n"
+
+
+evszam = int(input("Írjon be egy évszámot: "))
+print(f"{evszam}-ban megjelent diafilmek:\n"
 	"A vízitündér lánya\n"
 	"Prücsök\n"
 	"Lúdas Matyi\n"
@@ -25,8 +27,3 @@ print("3.4. feladat: Írjon be egy évszámot: 1988\n"
 	"Egy gyermekded vadkanról, a disznókról meg a bárányokról\n")
 
 print("3.5. feladat: A színes diafilmek átlagos hossza 36.87 kocka.")
-
-for kocka in kockak_szama:
-    kocka = kocka + 1
-    print(kocka)
-
