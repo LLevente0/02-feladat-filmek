@@ -29,6 +29,7 @@ print(f"{evszam}-ban megjelent diafilmek:\n"
 	"Eltáncolt üzenetek\n"
 	"Egy gyermekded vadkanról, a disznókról meg a bárányokról\n")
 
+
 szines = []
 
 for film in filmek:
