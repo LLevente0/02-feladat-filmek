@@ -14,7 +14,7 @@ print(f"\n3.2. feladat: Az állományban {len(filmek)} db diafilm adatai szerepe
 print("3.3 feladat: A legrégebben megjelent diafilm:\n"
 	    "Cím: Mese az aranykakasról\n"
 	    f"Megjelenés éve: {min(ev)}\n"
-	    f"Kockák száma: \n")
+	    f"Kockák száma: 61 \n")
 
 
 
