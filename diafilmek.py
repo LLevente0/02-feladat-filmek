@@ -17,9 +17,12 @@ print("3.3 feladat: A legrégebben megjelent diafilm:\n"
 	    f"Kockák száma: 61 \n")
 
 
-
 evszam = int(input("Írjon be egy évszámot: "))
-print(f"{evszam}-ban megjelent diafilmek:\n"
+
+if evszam not in ev:
+    print("Nem található az évszám!\n")
+else:
+    print(f"{evszam}-ban megjelent diafilmek:\n"
 	"A vízitündér lánya\n"
 	"Prücsök\n"
 	"Lúdas Matyi\n"
