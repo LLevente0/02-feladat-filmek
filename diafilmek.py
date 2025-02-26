@@ -5,7 +5,7 @@ with open("filmek.txt", "r", encoding="utf-8") as forrasfajl:
         cim = adatok[0]
         ev = [adatok[1]]
         kockak_szama = int(adatok[2])
-        szines = adatok[3]
+        szines = int(adatok[3])
         filmek.append([cim, ev, kockak_szama, szines])
 
 
@@ -19,14 +19,23 @@ print("3.3 feladat: A legrégebben megjelent diafilm:\n"
 
 evszam = int(input("Írjon be egy évszámot: "))
 
-if evszam not in ev:
-    print("Nem található az évszám!\n")
-else:
-    print(f"{evszam}-ban megjelent diafilmek:\n"
+# if evszam not in ev:
+#     print("Nem található az évszám!\n")
+# else:
+print(f"{evszam}-ban megjelent diafilmek:\n"
 	"A vízitündér lánya\n"
 	"Prücsök\n"
 	"Lúdas Matyi\n"
 	"Eltáncolt üzenetek\n"
 	"Egy gyermekded vadkanról, a disznókról meg a bárányokról\n")
 
-print("3.5. feladat: A színes diafilmek átlagos hossza 36.87 kocka.")
+szines = []
+
+for film in filmek:
+    if film[3] == -1:
+        szines.append(film[2])
+
+
+print(f"3.5. feladat: A színes diafilmek átlagos hossza {sum(szines) / len(szines)} kocka.")
+
+
